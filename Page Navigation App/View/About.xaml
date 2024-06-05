@@ -1,0 +1,98 @@
+﻿<UserControl x:Class="Page_Navigation_App.View.About"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Page_Navigation_App.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="622"
+             Style="{StaticResource Page_Style}">
+
+    <UserControl.DataContext>
+        <vm:AboutVM />
+    </UserControl.DataContext>
+
+
+    <StackPanel Width="500" Margin="61,38,61,103" RenderTransformOrigin="0.5,0.262">
+        <TextBlock Text="About"
+                   Foreground="White"
+                   FontSize="20"
+                   HorizontalAlignment="center"
+                   Margin="0,0,0,20"/>
+        <TextBlock Text="Water Quality Analyzer revolutionizes water quality monitoring through IoT sensors and cloud analytics. Our system collects real-time data on recycled water parameters, which is processed by advanced algorithms to evaluate overall quality. Get accurate insights, optimize treatment processes, promote sustainability, and cut operational costs with our innovative solution.
+                      "
+                       HorizontalAlignment="left"
+                       Foreground="white"
+                       FontSize="13"
+                       TextWrapping="Wrap"
+                       Margin="20,30,10,0" Height="96" Width="457"/>
+        <TextBlock Text="Behind this revolutionary solution is a team of passionate professionals:"
+                       HorizontalAlignment="left"
+                       Foreground="white"
+                       FontSize="13"
+                       TextWrapping="Wrap"
+                       Margin="20,10,30,0" Height="62" Width="457"/>
+        <StackPanel Orientation="Horizontal" RenderTransformOrigin="0.5,0.204" >
+            <Grid Width="120" Height="100">
+                <Ellipse Height="100" Width="100">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\LAMARTI Mohammed\Desktop\WaterC_Project\Page Navigation App\Images\\ah.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="Abdessamad AIT HAMOU"
+                    HorizontalAlignment="Left"
+                    Foreground="white"
+                    FontSize="10"
+                    TextWrapping="Wrap"
+                    Margin="0,106,0,-42" Width="128"/>
+            </Grid>
+            <Grid Width="120" Height="100">
+                <Ellipse Height="100" Width="100">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\LAMARTI Mohammed\Desktop\WaterC_Project\Page Navigation App\Images\\aouabe.jpg"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="Boubker AOUABE"
+                   HorizontalAlignment="Center"
+                   Foreground="white"
+                   FontSize="10"
+                   TextWrapping="Wrap" Margin="0,106,0,-106"
+                   />
+            </Grid>
+            <Grid Width="120" Height="100">
+                <Ellipse Height="100" Width="100">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\LAMARTI Mohammed\Desktop\WaterC_Project\Page Navigation App\Images\\lmt.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="Mohammed LAMARTI"
+                   HorizontalAlignment="Left"
+                   Foreground="white"
+                   FontSize="10" Margin="10,105,0,-105" 
+                  />
+            </Grid>
+            <Grid Width="120" Height="100">
+                <Ellipse Height="100" Width="100">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="C:\Users\LAMARTI Mohammed\Desktop\WaterC_Project\Page Navigation App\Images\\hiba .png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock Text="Hiba IBRAHIMI"
+                   HorizontalAlignment="Center"
+                   Foreground="white"
+                   FontSize="10" Margin="0,105,0,-105"
+                   
+                   />
+            </Grid>
+
+        </StackPanel>
+        <Grid>
+            <TextBlock Text="All right reserved 2024"
+                Foreground="white"
+                FontSize="10" Margin="200,71,-178,-71" 
+                />
+        </Grid>
+
+    </StackPanel>
+</UserControl>
